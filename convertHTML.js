@@ -20,3 +20,5 @@ function convertHTML(str) {
   }
   
   console.log(convertHTML('Stuff in "quotation marks"'));
+
+// Time = 12
