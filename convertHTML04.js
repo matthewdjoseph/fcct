@@ -11,7 +11,6 @@ function convertHTML(str) {
     sentenceArray.forEach(function(c, index){
       if(specialChars.hasOwnProperty(c)){
         sentenceArray[index] = specialChars[c];
-        console.log("here");
       }
     })
   
