@@ -1,11 +1,9 @@
 function binaryAgent(str) {
-
   var binaryString = str.split(' ');
 
-  binaryString.forEach(function(word,i){
-    var tempCharCode = parseInt(word,2).toString(10);
-    binaryString[i] = String.fromCharCode(tempCharCode);
-  });
+  binaryString.forEach(word =>
+    binaryString[binaryString.indexOf(word)] = 
+    String.fromCharCode(parseInt(word,2).toString(10)));
 
   return binaryString.join('');
 }
